@@ -5,11 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Eversi — Confectionery Leather Goods, Riyadh</title>
 <meta name="description" content="Eversi is a Riyadh house of leather goods shaped like the pâtisserie case — handbags, minaudières and bag charms made to satisfy cravings through sight and touch.">
-<meta name="theme-color" content="#F6EFE2">
+<meta name="theme-color" content="#FFFBF5">
+<meta name="color-scheme" content="light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%232B1810'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23E5B84B' font-family='Georgia' font-style='italic'%3Ee%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="assets/img/clementine-curtain.jpg" as="image">
+<link rel="preload" href="assets/img/clementine-floating.jpg" as="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="css/eversi.css">
+<link rel="stylesheet" href="css/option-b.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -35,23 +40,30 @@
   <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 8h18M3 16h18"/></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 9.5h4l3 3.2v3.8h-7"/><circle cx="6.5" cy="17.5" r="1.7"/><circle cx="17" cy="17.5" r="1.7"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><path d="M8.5 6.5H4V2"/><path d="M4.6 6.5A8.5 8.5 0 1 1 3.5 12"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path d="M4.5 11h15v9h-15z"/><path d="M3 7.5h18V11H3z"/><path d="M12 7.5V20"/><path d="M12 7.5C10.5 4 7.5 3.8 7.5 5.7S11 7.5 12 7.5zM12 7.5c1.5-3.5 4.5-3.7 4.5-1.8S13 7.5 12 7.5z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4.5 3.5V16H4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+  <symbol id="i-ruler" viewBox="0 0 24 24"><rect x="2.5" y="8" width="19" height="8" rx="1.5"/><path d="M6.5 8v3M10 8v4.5M13.5 8v3M17 8v4.5"/></symbol>
   <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
 </svg>
 
-<a class="sr" href="#main">Skip to content</a>
-<div class="announce"><b>10% off every handbag</b> · Complimentary delivery across the Kingdom on orders over <b>1,000 SAR</b><span class="hide-sm"> · Every piece arrives in the Patisserie Vault</span></div>
+<a class="sr" href="#main" data-ar="تخطَّ إلى المحتوى">Skip to content</a>
+<div class="announce" data-ar="<b>خصم 10% على كل الحقائب</b> · توصيل مجاني في جميع أنحاء المملكة للطلبات فوق <b>1,000 ريال</b><span class=&quot;hide-sm&quot;> · كل قطعة تصل في صندوق الباتيسري</span>"><b>10% off every handbag</b> · Complimentary delivery across the Kingdom on orders over <b>1,000 SAR</b><span class="hide-sm"> · Every piece arrives in the Patisserie Vault</span></div>
 
 <header class="nav">
   <div class="wrap">
     <nav class="nav__links" aria-label="Primary">
-      <a href="#/shop" data-nav="shop">Shop</a>
-      <a href="#/shop?type=charm" data-nav="charm">Charms</a>
-      <a href="#/vault" data-nav="vault">The Vault</a>
-      <a href="#/atelier" data-nav="atelier">Atelier</a>
+      <a href="#/shop" data-nav="shop" data-ar="المتجر">Shop</a>
+      <a href="#/shop?type=charm" data-nav="charm" data-ar="التعليقات">Charms</a>
+      <a href="#/vault" data-nav="vault" data-ar="الصندوق">The Vault</a>
+      <a href="#/atelier" data-nav="atelier" data-ar="المشغل">Atelier</a>
     </nav>
     <button class="icon-btn burger" data-open="menu" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
     <a href="#/" aria-label="Eversi — home"><svg class="nav__mark" viewBox="0 0 568 100"><use href="#wordmark"/></svg></a>
     <div class="nav__icons">
+      <button class="icon-btn lang-btn" data-lang-toggle lang="ar" aria-label="التبديل إلى العربية">ع</button>
       <button class="icon-btn" data-open="search" aria-label="Search"><svg><use href="#i-search"/></svg></button>
       <a class="icon-btn hide-sm" href="#/wishlist" aria-label="Wishlist"><svg><use href="#i-heart"/></svg><span class="count" data-wish-count></span></a>
       <button class="icon-btn" data-open="bag" aria-label="Open bag"><svg><use href="#i-bag"/></svg><span class="count" data-bag-count></span></button>
@@ -61,34 +73,44 @@
 
 <div class="mobile-menu" id="menu" aria-hidden="true">
   <div class="top"><svg class="nav__mark" viewBox="0 0 568 100"><use href="#wordmark"/></svg><button class="icon-btn" data-close aria-label="Close menu"><svg><use href="#i-close"/></svg></button></div>
-  <a class="big" href="#/shop">Shop all</a>
-  <a class="big" href="#/shop?line=patisserie">Pâtisserie Objets</a>
-  <a class="big" href="#/shop?type=charm">Bag charms</a>
-  <a class="big" href="#/vault">The Vault</a>
-  <a class="big" href="#/atelier">Atelier</a>
-  <a class="big" href="#/wishlist">Wishlist</a>
-  <a class="big" href="#/care">Client care</a>
+  <a class="big" href="#/shop" data-ar="كل المنتجات">Shop all</a>
+  <a class="big" href="#/shop?line=patisserie" data-ar="قطع الباتيسري">Pâtisserie Objets</a>
+  <a class="big" href="#/shop?type=charm" data-ar="تعليقات الحقائب">Bag charms</a>
+  <a class="big" href="#/vault" data-ar="صندوق الباتيسري">The Vault</a>
+  <a class="big" href="#/atelier" data-ar="المشغل">Atelier</a>
+  <a class="big" href="#/wishlist" data-ar="المفضّلة">Wishlist</a>
+  <a class="big" href="#/care" data-ar="خدمة العملاء">Client care</a>
+  <button class="big lang-big" data-lang-toggle lang="ar">ع</button>
 </div>
 
 <main id="main" tabindex="-1"></main>
+
+<section class="service" aria-label="Our promise">
+  <div class="wrap service__grid">
+    <div class="service__item"><svg aria-hidden="true"><use href="#i-truck"/></svg><b data-ar="التوصيل لكل المملكة">Delivery across the Kingdom</b><span data-ar="الرياض في اليوم التالي، وباقي مناطق المملكة خلال 2–4 أيام. مجاني للطلبات فوق 1,000 ريال.">Riyadh next day, the rest of Saudi Arabia in 2–4 days. Complimentary over 1,000 SAR.</span></div>
+    <div class="service__item"><svg aria-hidden="true"><use href="#i-return"/></svg><b data-ar="استرجاع خلال 14 يومًا">14-day returns</b><span data-ar="غيّرت رأيك؟ نستلمها من بابك مجانًا.">Changed your mind? We collect it from your door, free of charge.</span></div>
+    <div class="service__item"><svg aria-hidden="true"><use href="#i-gift"/></svg><b data-ar="صندوق الباتيسري">The Patisserie Vault</b><span data-ar="كل طلب يصل مغلّفًا كهدية، مع كيس حفظ وبطاقة مكتوبة باليد.">Every order arrives gift-wrapped, with a dust bag and a handwritten card.</span><a href="#/vault" data-ar="شاهد التغليف">See the packaging</a></div>
+    <div class="service__item"><svg aria-hidden="true"><use href="#i-chat"/></svg><b data-ar="خدمة المشغل">Atelier concierge</b><span data-ar="أسئلة عن المقاسات أو الهدايا أو العناية — يردّ المشغل شخصيًا، من الأحد إلى الخميس.">Questions on sizing, gifting or care — the atelier answers personally, Sunday to Thursday.</span><a href="mailto:hello@eversi.co">hello@eversi.co</a></div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="wrap">
     <div class="footer__grid">
       <div>
         <svg class="footer__mark" viewBox="0 0 568 100"><use href="#wordmark"/></svg>
-        <p class="note" style="max-width:34ch">A Riyadh house of leather goods, shaped to satisfy cravings through sight and touch alone.</p>
+        <p class="note" style="max-width:34ch" data-ar="دار رياضية للمنتجات الجلدية، صُمّمت لتُشبع الشهيّة بالنظر واللمس وحدهما.">A Riyadh house of leather goods, shaped to satisfy cravings through sight and touch alone.</p>
         <p style="margin-top:20px"><button class="theme-toggle" data-theme-toggle><svg width="16" height="16" style="fill:none;stroke:currentColor;stroke-width:1.6"><use href="#i-moon"/></svg><span>Switch to dark</span></button></p>
       </div>
-      <div><h4>Shop</h4><ul>
-        <li><a href="#/shop?type=bag">Handbags</a></li><li><a href="#/shop?line=patisserie">Pâtisserie Objets</a></li><li><a href="#/shop?type=charm">Bag charms</a></li><li><a href="#/shop?sort=new">New arrivals</a></li></ul></div>
-      <div><h4>The House</h4><ul>
-        <li><a href="#/atelier">Atelier</a></li><li><a href="#/vault">The Patisserie Vault</a></li><li><a href="#/wishlist">Wishlist</a></li></ul></div>
-      <div><h4>Client Care</h4><ul>
-        <li><a href="#/care">Delivery &amp; returns</a></li><li><a href="#/care">Caring for leather</a></li><li><a href="mailto:hello@eversi.co">hello@eversi.co</a></li><li>Riyadh, Saudi Arabia</li></ul></div>
+      <div><h4 data-ar="المتجر">Shop</h4><ul>
+        <li><a href="#/shop?type=bag" data-ar="حقائب اليد">Handbags</a></li><li><a href="#/shop?line=patisserie" data-ar="قطع الباتيسري">Pâtisserie Objets</a></li><li><a href="#/shop?type=charm" data-ar="تعليقات الحقائب">Bag charms</a></li><li><a href="#/shop?sort=new" data-ar="وصل حديثًا">New arrivals</a></li></ul></div>
+      <div><h4 data-ar="الدار">The House</h4><ul>
+        <li><a href="#/atelier" data-ar="المشغل">Atelier</a></li><li><a href="#/vault" data-ar="صندوق الباتيسري">The Patisserie Vault</a></li><li><a href="#/wishlist" data-ar="المفضّلة">Wishlist</a></li></ul></div>
+      <div><h4 data-ar="خدمة العملاء">Client Care</h4><ul>
+        <li><a href="#/care" data-ar="التوصيل والاسترجاع">Delivery &amp; returns</a></li><li><a href="#/care" data-ar="العناية بالجلد">Caring for leather</a></li><li><a href="mailto:hello@eversi.co">hello@eversi.co</a></li><li data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi Arabia</li></ul></div>
     </div>
     <div class="footer__base">
-      <span>© 2026 Eversi. Prices include 15% VAT.</span>
+      <span data-ar="© 2026 Eversi. الأسعار شاملة ضريبة القيمة المضافة 15%.">© 2026 Eversi. Prices include 15% VAT.</span>
       <div class="pay" aria-label="Accepted payment methods" data-pay-row></div>
     </div>
   </div>
@@ -97,21 +119,24 @@
 <div class="scrim" data-close></div>
 
 <aside class="drawer" id="bag" aria-hidden="true" aria-label="Shopping bag">
-  <div class="drawer__head"><h2>Your bag</h2><button class="icon-btn" data-close aria-label="Close bag"><svg><use href="#i-close"/></svg></button></div>
+  <div class="drawer__head"><h2 data-ar="سلّتك">Your bag</h2><button class="icon-btn" data-close aria-label="Close bag"><svg><use href="#i-close"/></svg></button></div>
   <div class="drawer__body" data-bag-lines></div>
   <div class="drawer__foot" data-bag-foot></div>
 </aside>
 
+<div class="modal" id="scale" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="scale-title"><div class="modal__panel" data-scale></div></div>
+
 <div class="search" id="search" aria-hidden="true">
   <div class="wrap">
-    <div class="search__bar"><svg width="22" height="22" style="fill:none;stroke:currentColor;stroke-width:1.5"><use href="#i-search"/></svg><input type="search" placeholder="Search the vitrine…" aria-label="Search products" data-search-input><button class="icon-btn" data-close aria-label="Close search"><svg><use href="#i-close"/></svg></button></div>
+    <div class="search__bar"><svg width="22" height="22" style="fill:none;stroke:currentColor;stroke-width:1.5"><use href="#i-search"/></svg><input type="search" placeholder="Search the vitrine…" data-ar-placeholder="ابحث في الواجهة…" aria-label="Search products" data-search-input><button class="icon-btn" data-close aria-label="Close search"><svg><use href="#i-close"/></svg></button></div>
     <div class="grid" data-search-results></div>
   </div>
 </div>
 
-<div class="toast" role="status" aria-live="polite"><span data-toast-msg></span><button data-open="bag">View bag</button></div>
+<div class="toast" role="status" aria-live="polite"><span data-toast-msg></span><button data-open="bag" data-ar="عرض السلة">View bag</button></div>
 
 <script src="js/catalog.js"></script>
+<script src="js/catalog-ar.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

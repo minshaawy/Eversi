@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Eversi — Option B: "Coulis"
+   Loaded after eversi.css. Red Velvet Coulis (#7A2331) becomes the house colour
+   in place of Ganache brown, with a quieter, gallery-like finish:
+   square-cut imagery, lighter type, edge-to-edge product grid.
+   ========================================================================== */
+
+:root{
+  --palette-coulis:#7A2331;
+  --coulis-800:#5E1A26;
+  --coulis-950:#2A0D13;
+  --coulis-100:#F1DFDC;
+  --coulis-300:#D9A3A9;
+
+  --surface:#FFFBF5;              /* Option B ground */
+  --surface-raised:#FFFEFB;
+  --surface-sunken:#F6EFE2;        /* Vellum sits behind images while they load */
+  --text-primary:#2A1D20;        /* wine-black instead of ganache brown */
+  --text-secondary:#5B4A4E;
+  --text-muted:#8C7A7D;
+  --accent:var(--palette-coulis);
+  --accent-strong:var(--palette-coulis);
+  --hairline:rgba(122,35,49,.13);
+  --hairline-strong:rgba(122,35,49,.30);
+  --btn-bg:var(--palette-coulis);
+  --btn-fg:var(--palette-vellum);
+  --overlay:rgba(42,13,19,.45);
+  --radius:0px;
+}
+:root[data-theme="dark"]{
+  --surface:#1C0B0F; --surface-raised:#26121A; --surface-sunken:#150810;
+  --text-primary:var(--palette-vellum); --text-secondary:#DCCBC6; --text-muted:#A8939A;
+  --accent:var(--coulis-300); --accent-strong:var(--coulis-300);
+  --hairline:rgba(246,239,226,.12); --hairline-strong:rgba(246,239,226,.28);
+  --btn-bg:var(--palette-vellum); --btn-fg:var(--palette-coulis);
+}
+
+/* ---------- colour: Coulis leads, Ganache and Gold support ----------
+   Coulis  — the house colour: primary buttons, announcement bar, offers, active states, footer.
+   Ganache — depth: the manifesto band, toast, secondary text weight.
+   Gold    — small highlights: kicker rules, stars, link underlines, counters, progress. */
+.announce{background:#1E1E1E}
+.announce b{color:var(--palette-butter);font-weight:600}
+.kicker{color:var(--accent)}
+.kicker::before{background:var(--gold)}
+.band{background:var(--palette-ganache-950)}
+.band .kicker{color:var(--gold)}
+.band .kicker::before{background:var(--gold)}
+.band .pillars h4{color:var(--gold)}
+.link{border-bottom-color:var(--gold)}
+.hero h1 em{color:var(--palette-coulis)}
+:root[data-theme="dark"] .hero h1 em{color:var(--coulis-300)}
+.marquee__track span{color:var(--palette-coulis)}
+:root[data-theme="dark"] .marquee__track span{color:var(--coulis-300)}
+.marquee__track span::after{color:var(--gold)}
+.btn--ghost{border-color:var(--palette-ganache);color:var(--palette-ganache)}
+.btn--ghost:hover{border-color:var(--palette-coulis);color:var(--palette-coulis)}
+:root[data-theme="dark"] .btn--ghost{border-color:var(--hairline-strong);color:var(--text-primary)}
+.card__quick{background:var(--palette-ganache)}
+.card__wish[aria-pressed="true"] svg,.wish-lg[aria-pressed="true"] svg{fill:var(--palette-coulis);stroke:var(--palette-coulis)}
+.card__tag{color:var(--palette-caramel)}
+.card__tag--sig{color:var(--palette-ganache)}
+:root[data-theme="dark"] .card__tag--sig{color:var(--gold)}
+.card__tag--sale{background:var(--palette-coulis);color:var(--palette-vellum)}
+.save{background:var(--palette-coulis);color:var(--palette-vellum)}
+.save-row{color:var(--palette-coulis)!important}
+.progress i b{background:var(--gold)}
+.petit[aria-current="page"] .petit__img{outline-color:var(--palette-coulis)}
+.scale-link,.service__item a{border-bottom-color:var(--gold)}
+.eta svg,.assure svg,.service__item svg,.scale-link svg{stroke:var(--palette-caramel)}
+.toast{background:var(--palette-ganache)}
+.toast button{color:var(--gold)}
+.icon-btn .count{background:var(--gold);color:var(--palette-ganache-950)}
+.confirm .ref{border-color:var(--gold)}
+.check input,.scale__ctl input{accent-color:var(--palette-coulis)}
+::selection{background:var(--palette-coulis);color:var(--palette-vellum)}
+:focus-visible{outline-color:var(--palette-coulis)}
+.nav__links a:hover,.nav__links a.on{border-bottom-color:var(--palette-coulis)}
+
+/* footer becomes the Coulis "box lid" that closes every page */
+.footer{background:var(--palette-coulis);color:var(--palette-vellum);border-top:0}
+.footer__mark{fill:var(--palette-vellum)}
+.footer h4{color:var(--gold)}
+.footer ul,.footer .note,.footer .theme-toggle{color:rgba(246,239,226,.82)}
+.footer ul a:hover{color:var(--palette-vellum)}
+.footer__base{border-top-color:rgba(246,239,226,.2);color:rgba(246,239,226,.7)}
+
+/* ---------- finish: square-cut, quieter ---------- */
+h1,h2,h3,h4{font-weight:500}
+.btn{border-radius:0;font-weight:500;letter-spacing:.12em;min-height:52px}
+.field,.check,.qty,.summary,.modal__panel,.scale__stage,.scale__units,.scale__units button,
+.card__media,.line-tile__img,.split__media,.mosaic img,.gallery__main,.gallery__thumbs button,
+.line img,.hero__tag img,.notice,.toast,.sort{border-radius:0}
+textarea.field{border-radius:0}
+.card__quick{border-radius:0;left:0;right:0;bottom:0}
+.card__name{font-weight:400;font-size:15px}
+.card .price{font-weight:500}
+
+/* shop: edge-to-edge grid with hairline gutters, info set just inside the edge */
+.wrap:has(> [data-shop-grid]){max-width:none;padding-inline:3px}
+[data-shop-grid]{column-gap:3px;row-gap:44px}
+[data-shop-grid] .card__body{padding-inline:clamp(10px,1.4vw,18px)}
+[data-shop-grid] .card__wish{top:10px}
+
+/* ---------- scale & rhythm, after the reference's own tokens ----------
+   Smaller, regular-weight headings and tighter section spacing let the photography carry the page. */
+:root{--max:1440px;--gutter:clamp(16px,3.4vw,48px)}
+body{letter-spacing:.01em}
+.section{padding-block:clamp(56px,6vw,96px)}
+.sec-head h2{font-size:clamp(26px,2.6vw,36px);font-weight:400;letter-spacing:-.01em}
+.page-head h1{font-size:clamp(34px,4.2vw,56px);font-weight:400}
+.hero h1{font-size:clamp(34px,4.4vw,60px);font-weight:400;letter-spacing:-.02em}
+.hero h1 em{font-weight:500}
+.hero__sub{font-size:16.5px}
+.split__copy h2{font-size:clamp(26px,2.8vw,40px);font-weight:400}
+.quote{font-size:clamp(22px,2.6vw,34px);font-weight:400}
+.buy h1{font-size:clamp(28px,3vw,40px);font-weight:400}
+.join h2{font-size:clamp(26px,3vw,38px);font-weight:400}
+.line-tile h3{font-weight:400}
+
+/* ---------- campaign pairs ---------- */
+.duo{padding-block:clamp(16px,2.4vw,32px)}
+.duo__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,24px)}
+.duo__item{display:flex;flex-direction:column;gap:14px;color:inherit}
+.duo__img{display:block;aspect-ratio:4/5;overflow:hidden;background:var(--surface-sunken)}
+.duo__img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.duo__item:hover .duo__img img{transform:scale(1.02)}
+.duo__cap{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.duo__cap small{display:block;font:500 10.5px var(--font-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--palette-caramel);margin-bottom:5px}
+.duo__cap b{font:400 clamp(18px,1.6vw,22px)/1.2 var(--font-display);transition:color .2s}
+.duo__item:hover .duo__cap b{color:var(--palette-coulis)}
+@media (max-width:700px){.duo__grid{grid-template-columns:1fr;gap:36px}}
+
+/* ---------- service row, centred ---------- */
+.service__grid{text-align:center}
+.service__item{align-items:center}
+.service__item a{align-self:center}

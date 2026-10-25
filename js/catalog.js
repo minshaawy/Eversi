@@ -15,7 +15,7 @@ window.EVERSI_PRODUCTS = [
     short: "Top-handle · Pêche calfskin · Ganache wave",
     desc: "A structured top-handle in pêche calfskin, dipped along the base in a ganache wave and finished with hand-set sprinkles of gold stud. Periwinkle rolled handles sit on gold collars — the whole silhouette reads like the first slice of a strawberry gâteau.",
     details: ["Smooth calfskin with contrast ganache leather wave", "Hand-set gold-tone studs", "Rolled leather handles, 14 cm drop", "Suede-lined interior with one slip pocket", "W 28 × H 17 × D 10 cm"],
-    images: [{ src: "drizzle-1", pos: "50% 55%" }],
+    images: [{ src: "drizzle-1", pos: "50% 55%" }, { src: "cam-drizzle-car", pos: "50% 55%" }],
     colours: [{ name: "Pêche & Ganache", hex: "#F2B4A4" }]
   },
   {
@@ -23,7 +23,7 @@ window.EVERSI_PRODUCTS = [
     short: "Mini bowling bag · Three flavours",
     desc: "A palm-sized dome bag in two-tone calfskin — a sorbet shell around a vanilla-cream front panel, zipped with a gold pull. Choose your flavour, or collect all three.",
     details: ["Smooth calfskin, contrast cream panel", "Two rolled top handles + detachable strap", "Two-way gold zip", "Fits phone, cardholder and lipstick", "W 19 × H 12 × D 8 cm"],
-    images: [{ src: "sorbet-1", pos: "50% 60%" }],
+    images: [{ src: "sorbet-1", pos: "50% 60%" }, { src: "cam-sorbet-chair", pos: "40% 50%" }, { src: "cam-sorbet-car", pos: "50% 55%" }, { src: "cam-sorbet-chair-2", pos: "40% 50%" }],
     colours: [{ name: "Lavande", hex: "#C9C2E8" }, { name: "Coral", hex: "#F6BDBB" }, { name: "Pistache", hex: "#BFE3D0" }]
   },
   {
@@ -47,7 +47,7 @@ window.EVERSI_PRODUCTS = [
     short: "Half-moon shoulder bag · Embossed segments",
     desc: "A half-moon of tangerine calfskin, embossed with the segments of a sliced clementine and finished with a leaf-and-stem strap fitting. Bright enough to carry a whole brunch.",
     details: ["Embossed smooth calfskin", "Adjustable shoulder strap", "Gold-tone leaf hardware", "Zip closure", "W 30 × H 15 × D 6 cm"],
-    images: [{ src: "clementine-curtain", pos: "50% 55%" }, { src: "clementine-2", pos: "50% 62%" }, { src: "clementine-1", pos: "50% 50%" }],
+    images: [{ src: "clementine-floating", pos: "50% 45%" }, { src: "cam-clem-teal", pos: "50% 55%" }, { src: "cam-clem-peel", pos: "50% 50%" }, { src: "cam-clem-orchard", pos: "50% 60%" }, { src: "cam-clem-pile", pos: "50% 50%" }, { src: "clementine-curtain", pos: "50% 55%" }],
     colours: [{ name: "Clementine", hex: "#E58A2E" }]
   },
   {
@@ -55,7 +55,7 @@ window.EVERSI_PRODUCTS = [
     short: "Minaudière · Hand-painted layers",
     desc: "The house signature: a layered strawberry gâteau rendered as a rigid minaudière — sponge, crème and fruit hand-painted on lacquered leather, topped with a cream handle. Presented in its own velvet hatbox.",
     details: ["Lacquered leather over a rigid frame", "Hand-painted fruit and crème", "Top handle + detachable gold chain", "Delivered in the pink velvet hatbox", "W 20 × H 14 × D 10 cm"],
-    images: [{ src: "fraisier-1", pos: "50% 55%" }, { src: "fraisier-2", pos: "45% 50%" }, { src: "fraisier-3", pos: "50% 60%" }, { src: "fraisier-4", pos: "50% 50%" }],
+    images: [{ src: "fraisier-1", pos: "50% 55%" }, { src: "cam-fraisier-navy", pos: "50% 45%" }, { src: "cam-fraisier-pedestal", pos: "50% 45%" }, { src: "fraisier-2", pos: "45% 50%" }, { src: "fraisier-3", pos: "50% 60%" }, { src: "fraisier-4", pos: "50% 50%" }],
     colours: [{ name: "Fraise", hex: "#F3B7B9" }]
   },
   {
@@ -87,7 +87,7 @@ window.EVERSI_PRODUCTS = [
     short: "Frame baguette · Ganache glaze",
     desc: "A long frame baguette in golden choux-textured leather, glazed in ganache and piped with crème pearls. Opens on a gold kiss-lock frame.",
     details: ["Textured calfskin, lacquered ganache top", "Gold kiss-lock frame and arch handle", "Detachable chain", "W 30 × H 12 × D 10 cm"],
-    images: [{ src: "eclair-1", pos: "50% 55%" }, { src: "eclair-2", pos: "60% 50%" }],
+    images: [{ src: "eclair-1", pos: "50% 55%" }, { src: "cam-eclair-car", pos: "50% 45%" }, { src: "eclair-2", pos: "60% 50%" }],
     colours: [{ name: "Ganache", hex: "#4A2A1A" }]
   },
 

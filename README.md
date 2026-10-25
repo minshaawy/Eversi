@@ -1,4 +1,6 @@
-# Eversi — Online Boutique
+# Eversi — Online Boutique · Option B (Coulis)
+
+Alternative direction: Red Velvet Coulis `#7A2331` is the house colour instead of Ganache brown, with square-cut imagery, lighter type and an edge-to-edge shop grid. Every Option B change lives in `css/option-b.css`, loaded after `css/eversi.css`; delete that one line in `index.html` to get the original look back.
 
 Storefront for **Eversi**, a Riyadh house of confectionery-inspired leather goods.
 A static site — plain HTML, CSS and JavaScript, with no build step and no dependencies.
